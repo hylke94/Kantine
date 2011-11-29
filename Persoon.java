@@ -5,6 +5,9 @@
  * @author Pim Vellinga
  * @version 1.0
  */
+
+import java.util.ArrayList;
+
 public class Persoon
 {
     private boolean isSchrikkelJaar;
@@ -22,6 +25,14 @@ public class Persoon
     
     
     //------ Constructor
+    
+    public Persoon(){
+        this.dag = 0;
+        this.maand = 0;
+        this.jaar = 0;
+        
+        this.Geslacht = 'X';
+    }
    
     public Persoon(int BSN, int dag, int maand, int jaar, char Geslacht, String Voornaam, String Achternaam){
         this.BSN = BSN;
@@ -294,6 +305,10 @@ public class Persoon
         }
         
         return isSchrikkelJaar;
+        
+    }
+    
+    public void pakDienblad(Dienblad dienblad){
         
     }
 }

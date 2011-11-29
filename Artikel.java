@@ -16,6 +16,10 @@ public class Artikel
      * Initliase a constructor for the Article name and the Article price.
      */
     
+    public Artikel(){
+        
+    }
+    
     public Artikel(String artikelNaam, int artikelPrijs){
         this.artikelNaam =  artikelNaam;
         this.artikelPrijs = artikelPrijs;
