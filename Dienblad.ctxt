@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Dienblad()
+comment1.params=
+comment1.target=int\ getAantalArtikelen()
+comment2.params=
+comment2.target=double\ getTotaalPrijs()
+comment3.params=artikel
+comment3.target=void\ voegToe(Artikel)
+numComments=4
