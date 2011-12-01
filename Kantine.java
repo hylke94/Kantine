@@ -14,15 +14,13 @@ public class Kantine
     
     private Persoon persoon;
     private Persoon persoon1;
-    
-    private Dienblad dienblad;
-    
+        
     private Artikel artikel1;
     private Artikel artikel2;
     
-    private double hoeveelheidGeld;
+    private double hoeveelheidGeld =0;
     
-    private int aantalArtikelen;
+    private int aantalArtikelen = 0;
     
     //-- Constructor
     
@@ -38,14 +36,14 @@ public class Kantine
      */
     
     public double hoeveelheidGeldInKassa(){
-        return hoeveelheidGeld;
+        return kassa.hoeveelheidGeldInKassa();
     }
     
     /**
      * @return alle artikelen;
      */
     public int aantalArtikelen(){
-        return aantalArtikelen;
+        return kassa.aantalArtikelen();
     }
     
     //-- Setters
@@ -70,7 +68,7 @@ public class Kantine
         
         persoon.pakArtikel(artikel1);
         persoon.pakArtikel(artikel2);
-        
+                
         kassarij.sluitAchteraan(persoon);
     
     }
