@@ -23,6 +23,8 @@ public class Persoon
     private String Voornaam;
     private String Achternaam;
     
+    public Dienblad dienblad;
+    
     
     //------ Constructor
     
@@ -121,11 +123,24 @@ public class Persoon
     }
     
     
+   /**
+    * Get the amount of articles on the tray
+    * 
+    * @return Amount of articles
+    */ 
+   
+   public int getAantalArtikelenOpDienblad(){
+        int aantalArtikelen = dienblad.getAantalArtikelen();  
+        return aantalArtikelen;
+    }
+    
     //------------------------------------- Setters
     
     
     /**
      * Set the BSN
+     * 
+     * @return BSN
      * 
      */
     
@@ -135,6 +150,8 @@ public class Persoon
     
     /**
      * Set the birthdate
+     * 
+     * @return Birthday
      */
     
     public void setBirthdate(int dag, int maand, int jaar){
@@ -236,6 +253,8 @@ public class Persoon
     
     /**
      * Set the first name
+     * 
+     * @return first name
      */
     
     public void setVoornaam(String Voornaam){
@@ -244,6 +263,8 @@ public class Persoon
     
     /**
      * Set the last name
+     * 
+     * @return last name
      */
     
     public void setAchternaam(String Achternaam){
@@ -252,6 +273,8 @@ public class Persoon
     
     /**
      * Set the gender
+     * 
+     * @return gender
      */
     
     public void setGender(char Geslacht){
@@ -269,6 +292,7 @@ public class Persoon
     /**
      * Prints a report about the Person
      * 
+     * @return void
      */
     
     public void drukAf(){
@@ -308,7 +332,24 @@ public class Persoon
         
     }
     
-    public void pakDienblad(Dienblad dienblad){
-        
+    /**
+     * Pak een nieuw dienblad
+     * 
+     * @return void
+     */
+    
+    public void pakDienblad(){
+        dienblad =  new Dienblad();
+    }
+    
+    
+    /**
+     * Pak artikel
+     * 
+     * @return void
+     */
+    
+    public void pakArtikel(Artikel artikel){
+        dienblad.voegToe(artikel);   
     }
 }

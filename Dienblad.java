@@ -1,4 +1,3 @@
-
 /**
  * Klasse Dienblad
  * 
@@ -25,9 +24,21 @@ public class Dienblad
     
     //--- Getters
     
+    /**
+     * Gets the amount of items
+     * 
+     * @return items
+     */
+    
     public int getAantalArtikelen(){
         return artikelen.size();
     }
+    
+    /**
+     * Gets the total price of the items
+     * 
+     * @return total price
+     */
     
     public double getTotaalPrijs(){
         
@@ -42,11 +53,17 @@ public class Dienblad
         
         return totaalPrijs;
     }
-    
+        
     //--- Setters
     
     
     //--- Voids
+    
+    /**
+     * Adds the item to an ArrayList
+     * 
+     * @return void
+     */
     
     public void voegToe(Artikel artikel){
         artikelen.add(artikel);

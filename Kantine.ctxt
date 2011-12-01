@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Kantine()
+comment1.params=
+comment1.target=double\ hoeveelheidGeldInKassa()
+comment1.text=\r\n\ @return\ geld\r\n
+comment2.params=
+comment2.target=int\ aantalArtikelen()
+comment2.text=\r\n\ @return\ alle\ artikelen;\r\n
+comment3.params=
+comment3.target=void\ loopPakSluitAan()
+comment3.text=\r\n\ Maakt\ een\ nieuw\ Persoon,\ en\ laat\ deze\ een\ dienblad\ maken\r\n\ Hierna\ worden\ er\ twee\ artikelen\ gemaakt.\r\n\ \r\n\ Deze\ worden\ daarna\ gepakt\ door\ de\ persoon.\r\n\ \r\n\ Hierna\ sluit\ het\ persoon\ zich\ aan\ in\ de\ rij\ voor\ de\ kassa.\r\n
+comment4.params=
+comment4.target=void\ verwerkRij()
+comment4.text=\r\n\ Verwerkt\ de\ rij\ voor\ de\ kassa\ en\ verwijderd\ de\ persoon\ daarna.\r\n\ Er\ wordt\ een\ while\ lus\ gemaakt\ omdat\ dit\ makkelijker\ is.\r\n
+comment5.params=
+comment5.target=void\ resetKassa()
+comment5.text=\r\n\ Reset\ de\ kassa\r\n
+numComments=6
