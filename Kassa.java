@@ -10,12 +10,10 @@ public class Kassa
 {
     //-- Variabelen
     private ArrayList<Artikel> artikel;
-    private Dienblad dienblad;
-    private Persoon persoon;
     private Kassarij kassarij;
     
-    private int aantalArtikelen;
-    private int hoeveelheidGeld;
+    private int aantalArtikelen = 0;
+    private int hoeveelheidGeld = 0;
     
     //-- Constructor
     
@@ -30,23 +28,20 @@ public class Kassa
     /**
      * Returns the amount of items
      * 
-     * @return int items;
+     * @return int items sold;
      */
     
-    public int aantalArtikelen(){
-        aantalArtikelen += dienblad.getAantalArtikelen();
+    public int aantalArtikelen(){               
         return aantalArtikelen;
     }
     
     /**
      * Returns the total amount of money earned
      * 
-     * @return int Money;
+     * @return int Money earned;
      */
     
-    public int hoeveelheidGeldInKassa(){        
-        hoeveelheidGeld += dienblad.getTotaalPrijs();
-        
+    public int hoeveelheidGeldInKassa(){                        
         return hoeveelheidGeld;
     }
     
@@ -60,9 +55,8 @@ public class Kassa
      */
     
     public void rekenAf(Persoon persoon){
-        persoon.dienblad.getAantalArtikelen();
-        aantalArtikelen();
-        dienblad.getTotaalPrijs();
+        aantalArtikelen +=persoon.dienblad.getAantalArtikelen();
+        hoeveelheidGeld += persoon.dienblad.getTotaalPrijs();
     }
     
     /**
@@ -75,4 +69,5 @@ public class Kassa
         aantalArtikelen = 0;
         hoeveelheidGeld = 0;
     }
+        
 }

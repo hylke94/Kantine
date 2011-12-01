@@ -33,7 +33,7 @@ public class Dienblad
     public int getAantalArtikelen(){
         return artikelen.size();
     }
-    
+
     /**
      * Gets the total price of the items
      * 

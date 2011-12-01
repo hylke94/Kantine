@@ -25,7 +25,7 @@ public class KantineSimulatie
     //-- Voids
     
     public void simuleer(int dagen){
-        for(int i = 0; i <= dagen; i++){
+        for(int i = 1; i <= dagen; i++){
             for(int j = 0; j < 10+i; j++){
                 kantine.loopPakSluitAan();
             }
