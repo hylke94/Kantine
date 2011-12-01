@@ -9,7 +9,7 @@ public class Artikel
 {
     private String artikelNaam;
     
-    private int artikelPrijs;
+    private int artikelPrijs = 0;
     
     
     /**
