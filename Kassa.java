@@ -13,7 +13,7 @@ public class Kassa
     private Kassarij kassarij;
     
     private int aantalArtikelen = 0;
-    private int hoeveelheidGeld = 0;
+    private double hoeveelheidGeld = 0;
     
     //-- Constructor
     
@@ -41,7 +41,7 @@ public class Kassa
      * @return int Money earned;
      */
     
-    public int hoeveelheidGeldInKassa(){                        
+    public double hoeveelheidGeldInKassa(){                        
         return hoeveelheidGeld;
     }
     
