@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class Artikel here.
  * 
@@ -9,7 +8,7 @@ public class Artikel
 {
     private String artikelNaam;
     
-    private int artikelPrijs = 0;
+    private double artikelPrijs = 0;
     
     
     /**
@@ -20,7 +19,7 @@ public class Artikel
         
     }
     
-    public Artikel(String artikelNaam, int artikelPrijs){
+    public Artikel(String artikelNaam, double artikelPrijs){
         this.artikelNaam =  artikelNaam;
         this.artikelPrijs = artikelPrijs;
         
@@ -38,7 +37,7 @@ public class Artikel
      * Get the Article price
      */
     
-    public int getArtikelPrice(){
+    public double getArtikelPrice(){
         return artikelPrijs;
     }
     
@@ -54,7 +53,7 @@ public class Artikel
      * Set a new Article price
      */
     
-    public void setArticlePrice(int artikelPrijs){
+    public void setArticlePrice(double artikelPrijs){
         this.artikelPrijs =  artikelPrijs;
     }
     
